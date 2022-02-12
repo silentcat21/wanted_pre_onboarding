@@ -7,21 +7,25 @@ export default function Tag () {
     const [ tags, setTags ] = useState(stateTag);
 
     const addTags = (e) => {
-        let items = e.target.items.trim();
+        let value = e.target.value.trim();
 
-        if(e.key === 'Enter' && !tags.includes(items) && items){
-            setTags([...tags, items]);
-            e.target.items = "";
+        if(e.key === "Enter" && !tags.includes(value) && value){
+            setTags([...tags, value]);
+            e.target.value = "";
+            console.log('ket1')
         }
-        else if(e.key === 'Enter' && !items){
-            e.target.items = "";
+        else if(e.key === "Enter" && !value){
+            e.target.value = "";
+            console.log('ket2')
         }
-    }
+    };
 
     const deleteTags = (indexToDelete) => {
         setTags(tags.filter((tag) => {
             return tag !== tags[indexToDelete]
         }))
+
+
     }
 
     return (
@@ -36,7 +40,7 @@ export default function Tag () {
                         </li>
                     ))}
                 </ul>
-                <input className="input" type="text" onKeyUp={(e) => {addTags(e)}} placeholder="Press enter to add tags"></input>
+                <input type="text" onKeyUp={(e) => {addTags(e)}} placeholder="Press enter to add tags"></input>
             </div>
         </>
     );
