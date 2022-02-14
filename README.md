@@ -3,4 +3,4 @@
 ----------------------------------------------------
 
 ## 1. 과제 구현내용 배포
-[Netlify](https://priceless-sinoussi-748198.netlify.app/)
+[Netlify-silent](https://priceless-sinoussi-748198.netlify.app/)에서 확인 가능합니다!
