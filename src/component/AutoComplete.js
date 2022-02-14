@@ -1,13 +1,15 @@
 import React, { useState, useEffect} from "react";
 import '../App.css'
 
+export const selectArray = [
+    'apple','banana','cat','demo','ease','foot','google','hello','image','jQuery','keel','like'
+    ,'monster','name','optimus','path','queen','respone','silentcat','telephone','useState','victim'
+    ,'Wanted','xelos','z-index'
+];
+
 export default function AutoComplete () {
 
-    const selectArray = [
-        'apple','banana','cat','demo','ease','foot','google','hello','image','jQuery','keel','like'
-        ,'monster','name','optimus','path','queen','respone','silentcat','telephone','useState','victim'
-        ,'Wanted','xelos','z-index','사과'
-    ];
+    
 
     const [saveText, setSaveText] = useState(false);
 
