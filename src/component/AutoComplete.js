@@ -45,7 +45,7 @@ export default function AutoComplete () {
     
     const arrowKey = (e) => {
         if(saveText){
-            if(e.key == 'ArrowDown' && search.length -1 > select) {
+            if(e.key === 'ArrowDown' && search.length -1 > select) {
                 setSelect(select +1)
             }
             else if (e.key === 'ArrowUp' && select >= 0) {
