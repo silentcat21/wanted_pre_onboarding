@@ -12,11 +12,11 @@ export default function Tag () {
         if(e.key === "Enter" && !tags.includes(value) && value){
             setTags([...tags, value]);
             e.target.value = "";
-            console.log('ket1')
+            console.log('key1')
         }
         else if(e.key === "Enter" && !value){
             e.target.value = "";
-            console.log('ket2')
+            console.log('key2')
         }
     };
 
